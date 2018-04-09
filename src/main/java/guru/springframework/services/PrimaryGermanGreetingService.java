@@ -7,7 +7,7 @@ public class PrimaryGermanGreetingService implements GreetingService {
 
     private GreetingRepository greetingRepository;
 
-    public PrimaryGermanGreetingService(GreetingRepository greetingRepository) {
+    PrimaryGermanGreetingService(GreetingRepository greetingRepository) {
         this.greetingRepository = greetingRepository;
     }
 

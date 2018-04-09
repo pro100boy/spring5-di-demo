@@ -21,5 +21,7 @@ public class DiDemoApplication {
 
         FakeJmsBroker fakeJmsBroker = ctx.getBean(FakeJmsBroker.class);
         System.out.println(fakeJmsBroker.getUsername());
+
+        System.out.println(controller.hello());
     }
 }
