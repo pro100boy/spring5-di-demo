@@ -22,13 +22,13 @@ public class LifeCycleDemoBean implements InitializingBean, DisposableBean, Bean
     }
 
     @Override
-    public void destroy() throws Exception {
+    public void destroy() {
         System.out.println("## The Lifecycle bean has been terminated");
 
     }
 
     @Override
-    public void afterPropertiesSet() throws Exception {
+    public void afterPropertiesSet() {
         System.out.println("## The LifeCycleBean has its properties set!");
 
     }
@@ -59,11 +59,11 @@ public class LifeCycleDemoBean implements InitializingBean, DisposableBean, Bean
         System.out.println("## The Predestroy annotated method has been called");
     }
 
-    public void beforeInit(){
+    void beforeInit(){
         System.out.println("## - Before Init - Called by Bean Post Processor");
     }
 
-    public void afterInit(){
+    void afterInit(){
         System.out.println("## - After init called by Bean Post Processor");
     }
 }
