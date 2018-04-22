@@ -10,3 +10,9 @@ spring:
 guru:
   jms:
     username: JMS Username $$$$$$ German
+---
+spring:
+    profiles: es
+guru:
+  jms:
+    username: JMS Username $$$$$$ Spain
